@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solmara Skies — a flight game</title>
+<link rel="icon" href="data:,">
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #0b1c2e;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  #flight-canvas {
+    display: block;
+    width: min(100vw, 177.78vh);
+    height: min(100vh, 56.25vw);
+    background: #7cc0ee;
+    cursor: crosshair;
+  }
+</style>
+</head>
+<body>
+<canvas id="flight-canvas" width="1280" height="720"></canvas>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
